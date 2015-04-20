@@ -1,0 +1,17 @@
+E:\PHONEGAP\hello\platforms\windows\build\windows80\debug\anycpu\resources.pri
+E:\PHONEGAP\hello\platforms\windows\build\windows80\debug\anycpu\AppxManifest.xml
+E:\PHONEGAP\hello\platforms\windows\build\windows80\debug\anycpu\CordovaApp.Windows80.build.appxrecipe
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\priconfig.xml
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\priconfig.xml.intermediate
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\layout.resfiles
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\layout.resfiles.intermediate
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\resources.resfiles
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\resources.resfiles.intermediate
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\pri.resfiles
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\pri.resfiles.intermediate
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\qualifiers.txt
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\qualifiers.txt.intermediate
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\MultipleQualifiersPerDimensionFound.txt
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\resources.pri.xml
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\ProjectArchitectures.txt
+E:\PHONEGAP\hello\platforms\windows\build\windows80\bld\package.map.txt
