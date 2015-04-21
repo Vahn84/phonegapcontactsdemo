@@ -18,11 +18,12 @@
              };
              var options = {};
              options.multiple = true;
-             $cordovaContacts.find(options).then(onSuccess, onError);
+             var fields = ["displayName", "name"];
+			 navigator.contacts.find(fields, onSuccess, onError, options);
            };
 
     	 
-           
+            $scope.getContacts();
     	
 	     $scope.openLeftMenu = function() {
 	         $mdSidenav('left').toggle();
@@ -32,6 +33,5 @@
     	 
      }]);
   
-     
      
      
