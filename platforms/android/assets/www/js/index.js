@@ -40,11 +40,15 @@ var app = {
 	    // Update DOM on a Received Event
 	    receivedEvent: function(id) {
 	        console.log('Received Event: ' + id);
-	        angular.bootstrap(document, ["angulargap"]);
-		    
-    	
+			 initializeFirstController();
 	    }
 	};
 
 
 app.initialize();
+
+function initializeFirstController() {
+	
+	
+	
+}

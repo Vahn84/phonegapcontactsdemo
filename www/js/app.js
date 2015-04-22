@@ -1,11 +1,14 @@
+//var angulargap= angular.module('angulargap');
 
-
-var angulargap = angular.module("angulargap", ['ngMaterial', 'ngAnimate']).config(function($compileProvider, $mdThemingProvider) {
+var angulargap =angular.module("angulargap",['ngMaterial', 'ngAnimate']);
+angulargap.config(function($compileProvider, $mdThemingProvider) {
             $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|file|blob|content):|data:image\//);
 			
 						 $mdThemingProvider.theme('default')
-				.primaryPalette('pink')
-				.accentPalette('orange');
+				.primaryPalette('light-blue')
+				.accentPalette('lime');
 			
         });
-console.log("linked dependencies");
+		
+console.log("config");
+
