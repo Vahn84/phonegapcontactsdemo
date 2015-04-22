@@ -113,3 +113,13 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+.md-avatar{
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  border-radius: 50%;
+  box-sizing: content-box;
+}

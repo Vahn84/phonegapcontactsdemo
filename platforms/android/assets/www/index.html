@@ -9,6 +9,7 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/ngAnimations.css" />
          <!-- Angulars Material CSS now available via Google CDN; version 0.8 used here -->
 	    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
         
@@ -16,7 +17,7 @@
         
 	   
    </head>
- <body>
+ <body >
     
 <div layout="column" ng-controller="IndexCtrl">
 	<md-toolbar>
@@ -33,24 +34,49 @@
 	
 <div class="row">
   <md-sidenav md-component-id="left" class="md-sidenav-left" layout-padding>
-   <ul>
-   <li>All Contacts</li>
-   <li>Contacts Around me</li>
-   </ul>
+ 
+   
+   <md-list layout-padding>	
+	
+	<md-list-item >
+	<h5>All Contacts</h5>
+	</md-list-item>	
+	<md-divider ></md-divider>
+	<md-list-item>
+	<h5>Contacts Around me</h5>
+	
+	</md-list-item>	
+  
+	</md-list>	
+   
   </md-sidenav>
   
   <md-content layout-padding >
-  	<md-button>
-  Get contacts
-</md-button>
-    <div ng-repeat="contact in contacts" >{{contact.name.givenName}}</div>
+	<md-progress-circular ng-show="loader.loading" md-mode="indeterminate"  layout-align="space-around"></md-progress-circular>
+		
+	 
+		
+	<md-list layout-padding>	
+	
+	<md-list-item ng-repeat="contact in contacts" ng-show="loader.animateList" class="animate-enter">
+    <img alt="{{contact.name.givenName}}" ng-src="{{contact.photos[0].value}}" class="md-avatar" />
+    <h2>{{contact.name.formatted}}</h2>
+	<p>{{contact.phoneNumbers[0].value}}</p>
+  
+	<md-divider ></md-divider>
+	</md-list-item>	
+  
+	</md-list>	
+	
+	
+   
   </md-content>
   
   
 </div>
   
 </div>
-    
+			<script type="text/javascript" src="cordova.js"></script>
 		    <!-- Angular Material Dependencies -->
 		    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 		    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
@@ -60,8 +86,7 @@
 		    <!-- Angular Material Javascript now available via Google CDN; version 0.8 used here -->
 		    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
 		    
-		     <script type="text/javascript" src="js/ng-cordova.js"></script>
-		     <script type="text/javascript" src="cordova.js"></script>
+		   
 
 		  
 			
